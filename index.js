@@ -13457,7 +13457,7 @@ break
 case prefix+'play2':  
 if (args.length < 1) return reply('Coloca el enlace del video!')
 play = args.join(" ")
-anu = await fetchJson(`https://hardianto.xyz/api/yt/playmp3?query=${play}&apikey=hardianto`)
+anu = await fetchJson(`https://hardianto.xyz/api/yt/playmp4?query=${play}&apikey=hardianto`)
 if (anu.error) return reply(anu.error)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
