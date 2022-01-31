@@ -13457,24 +13457,24 @@ break
 case prefix+'play2':  
 if (args.length < 1) return reply('Coloca el enlace del video!')
 play = args.join(" ")
-anu = await fetchJson(`https://hardianto.xyz/api/yt/playmp4?query=${play}&apikey=hardianto`)
+anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play}`)
 if (anu.error) return reply(anu.error)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
-${anu.title}
+${anu.result.info.title}
 ┬
-├‣ *Canal* : 
+├‣ *Visitas* : 
 ┴
-${anu.channel}
+${anu.result.info.view}
 ┬
-├‣ *Vistas* : 
+├‣ *Likes* : 
 ┴
-${anu.views}
+${anu.result.info.like}
 ┬
 ❒═════════════════╾❒`		
-buffer = await getBuffer(anu.thumb)
-buffer1 = await getBuffer(anu.url)
+buffer = await getBuffer(anu.result.info.thumbnail)
+buffer1 = await getBuffer(anu.result.video.link)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
 cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Aquí tienes 💕🦈'})
 addFilter(from)
