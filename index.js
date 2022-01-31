@@ -13456,23 +13456,23 @@ break
 case prefix+'play2':  
 if (args.length < 1) return reply('Coloca el enlace del video!')
 play = args.join(" ")
-anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play}`)
+anu = await fetchJson(`https://revita.herokuapp.com/api/yt/playmp3?query=${play}&apikey=ApiRevita`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
-${anu.result.info.title}
+${anu.title}
 ┬
-├‣ *Visitas* : 
+├‣ *Canal* : 
 ┴
-${anu.result.info.view}
+${anu.channel}
 ┬
-├‣ *Duración* : 
+├‣ *Vistas
 ┴
-${anu.result.info.duration}
+${anu.views}
 ┬
 ❒═════════════════╾❒`
-buffer = await getBuffer(anu.result.info.thumbnail)
-buffer1 = await getBuffer(anu.result.video.link)
+buffer = await getBuffer(anu.thumb)
+buffer1 = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
 cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Aquí tienes 💕🦈'})
 addFilter(from)
