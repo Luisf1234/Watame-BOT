@@ -13431,34 +13431,7 @@ case prefix+'play':
 if (isBanned) return  reply(mess.banned)          	  
 if (args.length < 1) return reply('Coloca el enlace de la canción!')
 play = body.slice(6)
-anu = await fetchJson(`https://api.zeks.me/api/ytplaymp3?apikey=apivinz&q=${play}`)
-if (anu.error) return reply(anu.error)
-infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘* ❭═════╾❒
-├‣ *Nombre* : 
-┴
-${anu.result.title}
-┬
-├‣ *Fuente* : 
-┴
-${anu.result.source}
-┬
-├‣ *Tamaño* : 
-┴
-${anu.result.size}
-┬
-❒═════════════════╾❒`
-buffer = await getBuffer(anu.result.thumbnail)
-lagu = await getBuffer(anu.result.url_audio)
-cnf.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3 })
-cnf.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`})
-addFilter(from)
-break
-
-case prefix+'play2':  
-if (args.length < 1) return reply('Coloca el enlace del video!')
-play = args.join(" ")
 anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play}`)
-if (anu.error) return reply(anu.error)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
@@ -13468,11 +13441,36 @@ ${anu.result.info.title}
 ┴
 ${anu.result.info.view}
 ┬
-├‣ *Likes* : 
+├‣ *Duración* : 
 ┴
-${anu.result.info.like}
+${anu.result.info.duration}
 ┬
-❒═════════════════╾❒`		
+❒═════════════════╾❒`
+buffer = await getBuffer(anu.result.info.thumbnail)
+lagu = await getBuffer(anu.result.audio.link)
+cnf.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3 })
+cnf.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`})
+addFilter(from)
+break
+
+case prefix+'play2':  
+if (args.length < 1) return reply('Coloca el enlace del video!')
+play = args.join(" ")
+anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play}`)
+infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
+├‣ *Nombre* : 
+┴
+${anu.result.info.title}
+┬
+├‣ *Visitas* : 
+┴
+${anu.result.info.view}
+┬
+├‣ *Duración* : 
+┴
+${anu.result.info.duration}
+┬
+❒═════════════════╾❒`
 buffer = await getBuffer(anu.result.info.thumbnail)
 buffer1 = await getBuffer(anu.result.video.link)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
