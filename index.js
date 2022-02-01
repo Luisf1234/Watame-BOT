@@ -13449,7 +13449,7 @@ ${anu.data.size}
 buffer = await getBuffer(anu.thumb)
 lagu = await getBuffer(anu.data.url)
 cnf.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3 })
-cnf.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`})
+cnf.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`})
 addFilter(from)
 break
 
@@ -13474,7 +13474,7 @@ ${anu.data.size}
 buffer = await getBuffer(anu.thumb)
 buffer1 = await getBuffer(anu.data.url)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
-cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Aquí tienes 💕🦈'})
+cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted:freply, caption: 'Aquí tienes 💕🦈'})
 addFilter(from)
 break
 
