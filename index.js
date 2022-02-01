@@ -13431,23 +13431,23 @@ case prefix+'play':
 if (isBanned) return  reply(mess.banned)          	  
 if (args.length < 1) return reply('Coloca el enlace de la canción!')
 play = body.slice(6)
-anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play}`)
+anu = await fetchJson(`https://api.neoxr.eu.org/api/music?q=${play}&apikey=yourkey`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
-${anu.result.info.title}
-┬
-├‣ *Visitas* : 
-┴
-${anu.result.info.view}
+${anu.title}
 ┬
 ├‣ *Duración* : 
 ┴
-${anu.result.info.duration}
+${anu.result.info.view}
+┬
+├‣ *Tamaño* : 
+┴
+${anu.data.size}
 ┬
 ❒═════════════════╾❒`
-buffer = await getBuffer(anu.result.info.thumbnail)
-lagu = await getBuffer(anu.result.audio.link)
+buffer = await getBuffer(anu.thumb)
+lagu = await getBuffer(anu.data.url)
 cnf.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3 })
 cnf.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`})
 addFilter(from)
@@ -13456,23 +13456,23 @@ break
 case prefix+'play2':  
 if (args.length < 1) return reply('Coloca el enlace del video!')
 play = args.join(" ")
-anu = await fetchJson(`https://revita.herokuapp.com/api/yt/playmp4?query=${play}&apikey=ApiRevita`)
+anu = await fetchJson(`https://api.neoxr.eu.org/api/video?q=${play}&apikey=yourkey`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
 ${anu.title}
 ┬
-├‣ *Canal* : 
+├‣ *Duración* : 
 ┴
-${anu.channel}
+${anu.duration}
 ┬
-├‣ *Vistas
+├‣ *Tamaño*
 ┴
-${anu.views}
+${anu.data.size}
 ┬
 ❒═════════════════╾❒`
 buffer = await getBuffer(anu.thumb)
-buffer1 = await getBuffer(anu.url, {method: 'get'})
+buffer1 = await getBuffer(anu.data.url)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
 cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Aquí tienes 💕🦈'})
 addFilter(from)
