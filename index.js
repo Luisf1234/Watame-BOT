@@ -13439,7 +13439,7 @@ ${anu.title}
 ┬
 ├‣ *Duración* : 
 ┴
-${anu.result.info.view}
+${anu.duration}
 ┬
 ├‣ *Tamaño* : 
 ┴
