@@ -1097,7 +1097,7 @@ addFilter(from)
 break
 
 case prefix+'ban':
-if (!isOwner) return reply(mess.only.ownerB)
+if (!isGroupAdmins) return reply(mess.only.admin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Por favor etiqueta!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) return reply('etiqueta')
