@@ -10528,7 +10528,7 @@ const pokemss = ['https://img.nickpic.host/qDInq5.jpg',
 'https://img.nickpic.host/qDjE7N.jpg',
 'https://img.nickpic.host/qDj6Sm.jpg',
 'https://img.nickpic.host/qDjQJq.jpg',
-'https://img.nickpic.host/qDjCR8.jpg'
+'https://img.nickpic.host/qDjCR8.jpg',
 'https://img.nickpic.host/u6MZaD.jpg',
 'https://img.nickpic.host/u6My2P.jpg',
 'https://img.nickpic.host/u6Mdn5.jpg',
