@@ -13576,23 +13576,23 @@ break
 case prefix+'play2':  
 if (args.length < 1) return reply('Coloca el enlace del video!')
 play = args.join(" ")
-anu = await fetchJson(`https://api.neoxr.eu.org/api/video?q=${play}&apikey=yourkey`)
+anu = await fetchJson(`https://api-invibot.herokuapp.com/api/yt/playmp4?query=${play}&apikey=APIKEY`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
 ${anu.title}
 ┬
-├‣ *Duración* : 
+├‣ *Canal* : 
 ┴
-${anu.duration}
+${anu.channel}
 ┬
-├‣ *Tamaño*
+├‣ *Visitas*
 ┴
-${anu.data.size}
+${anu.views}
 ┬
 ❒═════════════════╾❒`
 buffer = await getBuffer(anu.thumb)
-buffer1 = await getBuffer(anu.data.url)
+buffer1 = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
 cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted:freply, caption: 'Aquí tienes 💕🦈'})
 addFilter(from)
