@@ -13551,7 +13551,7 @@ case prefix+'play':
 if (isBanned) return  reply(mess.banned)          	  
 if (args.length < 1) return reply('Coloca el enlace de la canción!')
 play = body.slice(6)
-if (body.includes('á')){reply(`Las solicitudes no pueden contener tildes.`)}
+if (body.includes('é','í','ó','ú','á')){reply(`LAS SOLICITUDES NO PUEDEN CONTENER TILDES`)}
 anu = await fetchJson(`https://api-invibot.herokuapp.com/api/yt/playmp3?query=${play}&apikey=APIKEY`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
@@ -13576,7 +13576,8 @@ break
 
 case prefix+'play2':  
 if (args.length < 1) return reply('Coloca el enlace del video!')
-play = args.join(" ")
+play = body.slice(6)
+if (body.includes('é','í','ó','ú','á')){reply(`LAS SOLICITUDES NO PUEDEN CONTENER TILDES`)}
 anu = await fetchJson(`https://api-invibot.herokuapp.com/api/yt/playmp4?query=${play}&apikey=APIKEY`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
