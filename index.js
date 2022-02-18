@@ -13401,14 +13401,14 @@ if (!isGroupAdmins) return reply(mess.only.admin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Etiqueta a alguien para ser expulsado del grupo!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = 'Orden recibida, emitida :\n'
+teks = 'Orden recibida, adiós :\n'
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
 mentions(teks, mentioned, true)
 cnf.groupRemove(from, mentioned)
 } else {
-mentions(`Orden recibida, emitida : @${mentioned[0].split('@')[0]}`, mentioned, true)
+mentions(`Orden recibida, adiós : @${mentioned[0].split('@')[0]}`, mentioned, true)
 cnf.groupRemove(from, mentioned)
 }
 addFilter(from)
