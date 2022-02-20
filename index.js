@@ -1789,6 +1789,7 @@ if (!isGroupAdmins) return reply(mess.only.admin)
 await cnf.sendMessage(from, `Bye...\n_🌸Watame-BOT🌸 apagandose..._`, text,{quoted : freply})
 await sleep(3000)
 cnf.close()
+cnf.open()
 addFilter(from)
 break
 				
