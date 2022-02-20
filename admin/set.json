@@ -1,9 +1,9 @@
 {
 	"limitawal" : 0,
 	"memberlimit" : 5,
-	"cr" : "*",
+	"cr" : "Watame",
 	"BotPrefix" : "/",
-	"author" : "confu",
-	"pack" : "confu_mods"
+	"author" : "Manuel",
+	"pack" : "Watame-BOT"
 }
 	
