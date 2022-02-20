@@ -16,6 +16,7 @@ const nsfwmenu = (prefix, pushname) => {
 *╟ ❒ ${prefix}pokemon*
 *╟ ❒ ${prefix}nintendo*
 *╟ ❒ ${prefix}konosuba*
+*╟ ❒ ${prefix}hololive*
 *╟ ❒ ${prefix}toloveru*
 *╟ ❒ ${prefix}tatsumaki*
 *╟ ❒ ${prefix}dragonmaid*
