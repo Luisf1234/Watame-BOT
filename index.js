@@ -1051,7 +1051,6 @@ break
 
 case prefix+'telesticker':
 if (isBanned) return  reply(mess.banned)
-if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
 if (args.length < 1) return reply('Adjunta el enlace 😾')   
 teles = args.join(" ")
 teleg = await fetchJson(`https://api.lolhuman.xyz/api/telestick?apikey=c9b3628121d4a8adfbff2e11&url=${teles}`)
