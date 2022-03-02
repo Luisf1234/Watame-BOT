@@ -679,7 +679,7 @@ const uploadImages = (buffData, type) => {
         
         	if (isCmd && isFiltered(from) && isGroup) {
         	console.log(chalk.greenBright("├"), chalk.keyword("red")("[ SPAM ]"), chalk.whiteBright(`${command}`), chalk.greenBright("de"), chalk.keyword("yellow")(senderNumber))
-        	return cnf.sendMessage(from, `Por favor ${pushname}, espera 5 segundos para poder usar otros comandos, gracias.`, MessageType.text, {quoted: fspam})
+        	return cnf.sendMessage(from, `${pushname}, espera 5 segundos para poder usar otros comandos.`, MessageType.text, {quoted: fspam})
 		}
 	   
 	   
