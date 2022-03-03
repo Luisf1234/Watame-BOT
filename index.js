@@ -1784,7 +1784,7 @@ break
 
 case prefix+'shutdown':
 if (isBanned) return  reply(mess.banned)
-if (!isGroupAdmins) return reply(mess.only.admin)
+if (!isOwner) return reply(mess.only.ownerB)
 await cnf.sendMessage(from, `Bye...\n_🌸Watame-BOT🌸 apagandose..._`, text,{quoted : freply})
 await sleep(3000)
 cnf.close()
