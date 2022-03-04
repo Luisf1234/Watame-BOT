@@ -1,1 +1,1 @@
-worker : npm i @adiwajshing/baileys@latest && npm restart
+worker : npm i ffmpeg && npm i @adiwajshing/baileys@latest && npm start
