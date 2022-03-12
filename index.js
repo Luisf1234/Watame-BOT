@@ -2088,10 +2088,10 @@ case prefix+'patas':
 if (isBanned) return  reply(mess.banned)
 if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)		  
-res = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/animefeets?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
+resx = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/animefeets?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
 const lklk =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
 const fkfk = lklk[Math.floor(Math.random() * lklk.length)]
-cnf.sendMessage(from, buffer, image, { caption: fkfk, quoted: mek })
+cnf.sendMessage(from, resx, image, { caption: fkfk, quoted: mek })
 addFilter(from)
 break
 
@@ -2102,7 +2102,7 @@ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 res = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/animethighss?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
 const lll =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
 const frse = lll[Math.floor(Math.random() * lll.length)]
-cnf.sendMessage(from, buffer, image, { caption: frse, quoted: mek })					
+cnf.sendMessage(from, res, image, { caption: frse, quoted: mek })					
 addFilter(from)
 break
 
@@ -14052,7 +14052,7 @@ break
 					
 case prefix+'✋':
 if (isBanned) return  reply(mess.banned)
-const papel =[`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✋\n\n  :0 𝑬𝒎𝒑𝒂𝒕𝒆`,`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✊\n\n :( 𝑮𝒂𝒏𝒂?? ??𝒖`,`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✌️\n\n :) 𝑮𝒂𝒏𝒆 𝒉𝒖𝒎𝒂𝒏𝒐 𝒆𝒔𝒕𝒖𝒑𝒊𝒅𝒐`]
+const papel =[`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✋\n\n  :0 𝑬𝒎𝒑𝒂𝒕𝒆`,`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✊\n\n :( 𝑮𝒂𝒏𝒂?? 𝒕𝒖`,`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✌️\n\n :) 𝑮𝒂𝒏𝒆 𝒉𝒖𝒎𝒂𝒏𝒐 𝒆𝒔𝒕𝒖𝒑𝒊𝒅𝒐`]
 const jggg = papel[Math.floor(Math.random() * papel.length)]
 cnf.sendMessage(from, `𝑷𝑰𝑬𝑫𝑹𝑨 𝑷𝑨𝑷𝑬𝑳 𝑶 𝑻𝑰??𝑬𝑹𝑨\n\n` + jggg, text)
 addFilter(from)
