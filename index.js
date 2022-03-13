@@ -14244,16 +14244,16 @@ buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome/toxic?apikey=${ne
 cnf.sendMessage(from, buff, image, {quoted: mek})        
 addFilter(from)
 break 
-                   
+
 case prefix+'ice':
 if (isBanned) return  reply(mess.banned)
 if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS`)
 const apis =['7c6c9a9e1138b473e6c64388','ff8508e71c332b870c1e8a1b','b57c69801b7b3e63b3b3e94c','e07d2ff8ff95d995809ec7b3','99ae3d189586081a2be37357','8cd8a7918eab2510afd496c0','69ca7c7a6206090978680cbe','9e91ba5f31f1eb7c772f3100','715bbe735bd7e25872ef40d6','5453dae015e205a91b6994ff']
 const nepe = apis[Math.floor(Math.random() * apis.length)]                
-bpp5 = `${body.slice(5)}`
+ice = body.slice(6)
 if (args.length < 1) return reply('En dónde está el texto?')
 if (args.length > 10) return reply('Maximo 10 letras')
-buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome/icecold?apikey=${nepe}&text=${bpp5}`, {method: 'get'})
+buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome/icecold?apikey=${nepe}&text=${ice}`, {method: 'get'})
 cnf.sendMessage(from, buff, image, {quoted: mek})
 addFilter(from)
 break  
