@@ -2,7 +2,7 @@
 	"limitawal" : 0,
 	"memberlimit" : 5,
 	"cr" : "Watame",
-	"BotPrefix" : "#",
+	"BotPrefix" : "/",
 	"author" : "Manuel",
 	"pack" : "Watame-BOT"
 }
