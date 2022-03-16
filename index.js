@@ -13915,7 +13915,7 @@ break
 case prefix+'play':
 if (isBanned) return  reply(mess.banned)          	  
 if (args.length < 1) return reply('Coloca el enlace de la canción!')
-play = args.join(" ")
+play = body.slice(6)
 anu = await fetchJson(`https://api-invibot.herokuapp.com/api/yt/playmp3?query=${play}&apikey=APIKEY`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
@@ -13940,7 +13940,7 @@ break
 
 case prefix+'play2':  
 if (args.length < 1) return reply('Coloca el enlace del video!')
-play2 = args.join(" ")
+play2 = body.slice(6)
 anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play2}`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
@@ -13956,6 +13956,7 @@ ${anu.result.info.uploader}
 ${anu.result.video.size}
 ┬
 ❒═════════════════╾❒`
+if (anu.result.video.size = error) return reply('Ha habido un error 😓')
 buffer = await getBuffer(anu.result.info.thumbnail)
 buffer1 = await getBuffer(anu.result.video.link)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
