@@ -13947,7 +13947,7 @@ anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
-${anu.result.info.tittle}
+${anu.result.info.title}
 ┬
 ├‣ *Canal* : 
 ┴
