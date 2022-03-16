@@ -13956,7 +13956,7 @@ ${anu.result.info.uploader}
 ${anu.result.video.size}
 ┬
 ❒═════════════════╾❒`
-if (anu.result = "error") return reply('Ha habido un error 😓')
+if (anu.result.video.size > 80) return reply('El archivo es muy pesado 😟')
 buffer = await getBuffer(anu.result.info.thumbnail)
 buffer1 = await getBuffer(anu.result.video.link)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
