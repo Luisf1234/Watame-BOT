@@ -820,7 +820,7 @@ lzain = ` ‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ �
 *╟X* ‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎
 *╟ ❒ ${prefix}nh*
 *╟* _Adjunta el código de manga_
-*╟* _Ábrelo desde tus documentos _
+*╟* _Abre tus documentos para verlo_
 *╟ ❒ ${prefix}spoti*
 *╟* _Descarga música de spotify_
 *╟ ❒ ${prefix}gimage*
@@ -13941,25 +13941,25 @@ break
 
 case prefix+'play2':  
 if (args.length < 1) return reply('Coloca el enlace del video!')
-play = body.slice(6)
+play2 = body.slice(6)
 if (body.includes('é','í','ó','ú','á')){reply(`LAS SOLICITUDES NO PUEDEN CONTENER TILDES`)}
-anu = await fetchJson(`https://api-invibot.herokuapp.com/api/yt/playmp4?query=${play}&apikey=APIKEY`)
+anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play2}`)
 infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
-${anu.title}
+${anu.result.info.tittle}
 ┬
 ├‣ *Canal* : 
 ┴
-${anu.channel}
+${anu.result.info.uploader}
 ┬
-├‣ *Visitas*
+├‣ *Tamaño*
 ┴
-${anu.views}
+${anu.result.video.size}
 ┬
 ❒═════════════════╾❒`
-buffer = await getBuffer(anu.thumb)
-buffer1 = await getBuffer(anu.url)
+buffer = await getBuffer(anu.result.info.thumbnail)
+buffer1 = await getBuffer(anu.result.video.link)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
 cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted:freply, caption: 'Aquí tienes 💕🦈'})
 addFilter(from)
