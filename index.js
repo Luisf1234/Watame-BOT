@@ -13916,23 +13916,23 @@ case prefix+'play':
 if (isBanned) return  reply(mess.banned)          	  
 if (args.length < 1) return reply('Coloca el enlace de la canción!')
 play = body.slice(6)
-anu = await fetchJson(`https://api-invibot.herokuapp.com/api/yt/playmp3?query=${play}&apikey=APIKEY`)
-infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘2* ❭═════╾❒
+anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play}`)
+infomp3 = `❒═════❬ *𝐏𝐋𝐀𝐘* ❭═════╾❒
 ├‣ *Nombre* : 
 ┴
-${anu.title}
+${anu.result.info.title}
 ┬
 ├‣ *Canal* : 
 ┴
-${anu.channel}
+${anu.result.info.uploader}
 ┬
-├‣ *Visitas* : 
+├‣ *Tamaño*
 ┴
-${anu.views}
+${anu.result.audio.size}
 ┬
 ❒═════════════════╾❒`
-buffer = await getBuffer(anu.thumb)
-lagu = await getBuffer(anu.url)
+buffer = await getBuffer(anu.result.info.thumbnail)
+lagu = await getBuffer(anu.result.audio.link)
 cnf.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3 })
 cnf.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`})
 addFilter(from)
@@ -13956,7 +13956,6 @@ ${anu.result.info.uploader}
 ${anu.result.video.size}
 ┬
 ❒═════════════════╾❒`
-if (anu.result.video.size > 80) return reply('El archivo es muy pesado 😟')
 buffer = await getBuffer(anu.result.info.thumbnail)
 buffer1 = await getBuffer(anu.result.video.link)
 cnf.sendMessage(from, buffer, image, { caption: infomp3})
