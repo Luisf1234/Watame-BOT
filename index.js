@@ -1942,7 +1942,7 @@ ayudda =`┌─────┤AYUDA├─────
 ├‣ +51931655706
 │
 ├ *Grupo Oficial :*
-├‣ https://bit.ly/3r1IJdn
+├‣ https://bit.ly/3u6WPL0
 └────────────────`
 cnf.sendMessage(from, ayudda, text)
 addFilter(from)
