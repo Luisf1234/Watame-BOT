@@ -951,8 +951,6 @@ lzain = ` ‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ �
 *╟X* ‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎
 *╟ ❒ ${prefix}getpic @*
 *╟* _Obtén el perfil de la persona_
-*╟ ❒ ${prefix}perfil*
-*╟* _Estado de cuenta_
 *╟ ❒ ${prefix}wame*
 *╟* _Tu enlace directo de Whatsapp_
 *╟ ❒ ${prefix}frases*
@@ -14097,24 +14095,6 @@ cnf.sendMessage(from, buffer, image, {quoted: mek, caption: '🌸Watame-BOT🌸'
 fs.unlinkSync(ran)
 })
 await limitAdd(sender) 
-addFilter(from)
-break
-
-case prefix+'perfil':
-if (isBanned) return  reply(mess.banned)
-cnf.updatePresence(from, Presence.composing)
-try {
-profil = await cnf.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
-} catch {
-profil = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'}
-const uaangku = checkATMuser(sender)
-profile = `╭─「 *PERFIL* 」
-│• *Nombre:* ${pushname}
-│• *Cuenta Activa:* ✅				
-│• *Link:* wa.me/${sender.split("@")[0]}
-╰─────────────────────`
-buff = await getBuffer(profil)
-cnf.sendMessage(from, buff, image, {quoted: mek, caption: profile})
 addFilter(from)
 break
 
