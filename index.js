@@ -14487,7 +14487,7 @@ Turno de = @${tty.player1.split('@')[0]}`
  cnf.sendMessage(from, ucapan, text, {quoted: mek, contextInfo:{mentionedJid: [tty.player1,tty.player2]}})
  }
 
-        if (budy.includes('.com')){
+        if (budy.includes('https://chat.whatsapp.com')){
 					if (!isGroup) return
 					if (!isAntiLink) return
 					if (isGroupAdmins) return reply('Te salvaste eres admin 🧐')
