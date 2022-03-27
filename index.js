@@ -793,10 +793,8 @@ break
 
 case prefix+'menu':
 if (isBanned) return  reply(mess.banned)
-const watigm =['confu.jpeg','cnf.jpeg','Watame01.jpg','Watame02.jpg','Watame03.jpg','Watame04.jpg','Watame05.jpg','Watame06.jpg','Watame07.jpg','Watame08.jpg','Watame09.jpg','Watame10.jpg']
-const igmm = watigm[Math.floor(Math.random() * watigm.length)]
-wew = fs.readFileSync(`./media/${igmm}`)
-const sosGay = checkATMuser(sender)   
+const menuimg =['https://files.catbox.moe/crm2et.jpg','https://files.catbox.moe/0dplrb.jpg','https://files.catbox.moe/24oma3.jpg','https://files.catbox.moe/jhaejp.jpg','https://files.catbox.moe/xzj325.jpg','https://files.catbox.moe/d3mbzg.jpg','https://files.catbox.moe/v690fe.jpg','https://files.catbox.moe/dh6pxn.jpg','https://files.catbox.moe/hfs417.jpg','https://files.catbox.moe/wffpwl.jpg']
+const igmm = menuimg[Math.floor(Math.random() * menuimg.length)]
 lzain = ` ‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎
 *╭✦┅╡ MENU PRINCIPAL ╞┅✦╮*
 *╟X* ‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎
@@ -966,8 +964,8 @@ lzain = ` ‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ �
 *║*
 *┠━➣NOTA:*
 No uses tildes o símbolos al realizar peticiones, si alguna función no responde espera algunas horas hasta que se reestablezca o ponte en contacto con el creador.`
-
-cnf.sendMessage(from, wew, image,{contextInfo: {forwardingScore : 0, isForwarded: false},sendEphemeral: false, caption:lzain})
+menwtm = await getBuffer(igmm)
+cnf.sendMessage(from, menwtm, image,{contextInfo: {forwardingScore : 0, isForwarded: false},sendEphemeral: false, caption:lzain})
 addFilter(from)
 break
 
