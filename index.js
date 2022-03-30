@@ -1222,18 +1222,17 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (args.length < 1) return reply('Escribe 1 para activar')
-if (Number(args[0]) === 1) {
+if (Number(args[0]) === 0) {
 if (isAntiLink) return reply('Ya está activo')
 antilink.push(from)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-reply('Activado correctamente✔️')
-cnf.sendMessage(from,`*🚫Antilink ha sido ativado, si envían enlaces serán eliminados del grupo🚫*`, text)
-} else if (Number(args[0]) === 0) {
+reply('Desactivado correctamente ✔️')
+} else if (Number(args[0]) === 1) {
 if (!isAntiLink) return reply('*Desactivado*')
 var ini = antilink.indexOf(from)
 antilink.splice(ini, 1)
 fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
-reply('Desactivado correctamente ✔️')
+reply('Antilink está activo de forma automática ✨')
 } else {
 reply('Escribe 1 para activar o 0 para desactivar')
 }
