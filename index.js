@@ -1223,13 +1223,13 @@ if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (args.length < 1) return reply('Escribe 1 para activar')
 if (Number(args[0]) === 1) {
-if (!isAntiLink) return reply('Ya está activo')
+if (isAntiLink) return reply('Ya está activo')
 antilink.push(from)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
 reply('Activado correctamente✔️')
 cnf.sendMessage(from,`*🚫Antilink ha sido ativado, si envían enlaces serán eliminados del grupo🚫*`, text)
 } else if (Number(args[0]) === 0) {
-if (isAntiLink) return reply('*Desactivado*')
+if (!isAntiLink) return reply('*Desactivado*')
 var ini = antilink.indexOf(from)
 antilink.splice(ini, 1)
 fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
@@ -14487,7 +14487,7 @@ Turno de = @${tty.player1.split('@')[0]}`
 
         if (budy.includes('https://chat.whatsapp.com')){
 					if (!isGroup) return
-                                        if (isGroup) return
+                                        if (isAntiLink) return
 					if (isGroupAdmins) return reply('Te salvaste eres admin 🧐')
 										var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 					reply(`Enlace detectado 🗡️`)
