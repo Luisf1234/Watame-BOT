@@ -14487,6 +14487,7 @@ Turno de = @${tty.player1.split('@')[0]}`
 
         if (budy.includes('https://chat.whatsapp.com')){
 					if (!isGroup) return
+                                        if (isGroup) return
 					if (isGroupAdmins) return reply('Te salvaste eres admin 🧐')
 										var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 					reply(`Enlace detectado 🗡️`)
