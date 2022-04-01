@@ -1752,7 +1752,7 @@ if (isBanned) return  reply(mess.banned)
 if (!isQuotedSticker) return reply('Responde a un sticker!')
 encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 media = await cnf.downloadAndSaveMediaMessage(encmedia)
-ran = getRandom('.png')
+ran = getRandom('toimg.png')
 exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 fs.unlinkSync(media)
 if (err) return reply('Hubo un fallo, por favor intentalo de nuevo 😿')
