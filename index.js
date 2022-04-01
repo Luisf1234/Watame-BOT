@@ -1755,7 +1755,7 @@ media = await cnf.downloadAndSaveMediaMessage(encmedia)
 ran = getRandom('.png')
 exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 fs.unlinkSync(media)
-if (err) return reply('Hubo un fallo, por favor intentalo de nuevo ')
+if (err) return reply('Hubo un fallo, por favor intentalo de nuevo 😿')
 buffer = fs.readFileSync(ran)
 fakethumb(buffer,'Listo 🙂')
 fs.unlinkSync(ran)
@@ -14075,23 +14075,6 @@ const mary =['Algunos quieren ser ricos a través del dinero, otros del poder, p
 const js = mary[Math.floor(Math.random() * mary.length)]
 wew = fs.readFileSync(`./media/cnf.jpeg`)
 cnf.sendMessage(from, wew, image, { caption: '*ᎮᎥᏒᎧᎮᎧᏕ👌*\n\n'+ js, quoted: mek })
-addFilter(from)
-break
-
-case prefix+'toimg':
-if (isBanned) return  reply(mess.banned)
-if (!isQuotedSticker) return reply(' etiqueta un sticker')
-encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-media = await cnf.downloadAndSaveMediaMessage(encmedia)
-ran= getRandom('.png')
-exec(`ffmpeg -i ${media} ${ran}`, (err) => {
-fs.unlinkSync(media)
-if (err) return reply(' Fallo ')
-buffer = fs.readFileSync(ran)
-cnf.sendMessage(from, buffer, image, {quoted: mek, caption: '🌸Watame-BOT🌸'})
-fs.unlinkSync(ran)
-})
-await limitAdd(sender) 
 addFilter(from)
 break
 
