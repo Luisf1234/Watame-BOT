@@ -184,16 +184,8 @@ async function starts() {
 cnf.on('CB:action,,call', async json => {
     const callerId = json[2][0][1].from;
     console.log("call dari "+ callerId)
-        cnf.sendMessage(callerId, "Sistema de bloqueo automático, nada de llamadas! (・–・;)ゞ", MessageType.text)
-        await sleep(4000)
-        await cnf.blockUser(callerId, "add") 
+        cnf.sendMessage(callerId, "Nada de llamadas! (・–・;)ゞ", MessageType.text)  
 })
-	cnf.on('CB:Blocklist', json => {
-            if (blocked.length > 2) return
-	    for (let i of json[1].blocklist) {
-	    	blocked.push(i.replace('c.us','s.whatsapp.net'))
-	    }
-	})
 	
 cnf.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
