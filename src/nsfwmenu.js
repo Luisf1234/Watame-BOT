@@ -26,7 +26,6 @@ const nsfwmenu = (prefix, pushname) => {
 *╟ ❒ ${prefix}ero*
 *╟ ❒ ${prefix}tits*
 *╟ ❒ ${prefix}yuri*
-*╟ ❒ ${prefix}yaoi*
 *╟ ❒ ${prefix}patas*
 *╟ ❒ ${prefix}nekoh*
 *╟ ❒ ${prefix}thighs*
