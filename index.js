@@ -1197,7 +1197,7 @@ const F11F = Z11F[Math.floor(Math.random() * Z11F.length)]
 const G22F = U11F[Math.floor(Math.random() * U11F.length)]
 const H33F = T11F[Math.floor(Math.random() * T11F.length)]          
 jds = []
-D11 = `●❯────────────────❮●\nTop de los mas furros del grupo\n@${F111.jid.split('@')[0]} \n🦊\n@${G222.jid.split('@')[0]}\n🐼\n@${H333.jid.split('@')[0]}\n●❯────────────────❮●`                  
+D11 = `●❯────────────────❮●\nTop de los mas furros del grupo\n@${F11F.jid.split('@')[0]} \n🦊\n@${G22F.jid.split('@')[0]}\n🐼\n@${H33F.jid.split('@')[0]}\n●❯────────────────❮●`                  
 jds.push(F11F.jid)
 jds.push(G22F.jid)
 jds.push(H33F.jid)
