@@ -1218,9 +1218,9 @@ if (Number(args[0]) === 0) {
 if (isAntiLink) return reply('Antilink desactivado')
 antilink.push(from)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-reply('Desactivado correctamente ✔️')
+reply('*Desactivado correctamente ✔️*')
 } else if (Number(args[0]) === 1) {
-if (!isAntiLink) return reply('*Ya se encuentra activo*')
+if (!isAntiLink) return reply('*Ya se encuentra activo ✔️*')
 var ini = antilink.indexOf(from)
 antilink.splice(ini, 1)
 fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
