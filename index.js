@@ -1204,7 +1204,7 @@ if (isBanned) return  reply(mess.banned)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 anu = await axios.get('https://nekos.life/api/v2/img/avatar')
 avatars = await getBuffer(anu.data.url)
-cnf.sendMessage(from, avatars, image, {quoted: mek, caption: 'Linda foto no?' })
+cnf.sendMessage(from, avatars, image, {quoted: mek, caption: '¿Linda foto no?' })
 addFilter(from)
 break
 			    
@@ -1239,7 +1239,7 @@ fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-20
 .then(body => {
 let tod = body.split("\n");
 let pjr = tod[Math.floor(Math.random() * tod.length)];
-const nime =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊'];
+const nime =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽'];
 const anim = nime[Math.floor(Math.random() * nime.length)];
 imageToBase64(pjr)
 .then((response) => {
@@ -1507,7 +1507,7 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 yuriz = await axios.get('https://nekos.life/api/v2/img/yuri')
 bupyuri = await getBuffer(yuriz.data.url)
-const yurix =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const yurix =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const bpyuri = yurix[Math.floor(Math.random() * yurix.length)]
 cnf.sendMessage(from, bupyuri, image, { caption: bpyuri, quoted: mek })
 .catch(err => {
@@ -1522,7 +1522,7 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 fem = await axios.get('https://nekos.life/api/v2/img/femdom')
 bpfem = await getBuffer(fem.data.url)
-const femx =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const femx =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const femdom = femx[Math.floor(Math.random() * femx.length)]
 cnf.sendMessage(from, bpfem, image, { caption: femdom, quoted: mek })
 .catch(err => {
@@ -1537,7 +1537,7 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 yurixz = await axios.get('https://nekos.life/api/v2/img/eroyuri')
 yurixzx = await getBuffer(yurixz.data.url)
-const eroyurx =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const eroyurx =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const eroyur = eroyurx[Math.floor(Math.random() * eroyurx.length)]
 cnf.sendMessage(from, yurixzx, image, { caption: eroyur, quoted: mek })
 .catch(err => {
@@ -1552,7 +1552,7 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 tits = await axios.get('https://nekos.life/api/v2/img/tits')
 botits = await getBuffer(tits.data.url)
-const yurit =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const yurit =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const bptits = yurit[Math.floor(Math.random() * yurit.length)]
 cnf.sendMessage(from, botits, image, { caption: bptits, quoted: mek })
 .catch(err => {
@@ -1567,7 +1567,7 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 nekoo = await axios.get('https://nekos.life/api/v2/img/neko')
 nekko = await getBuffer(nekoo.data.url)
-const nneko =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const nneko =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const nnko = nneko[Math.floor(Math.random() * nneko.length)]
 cnf.sendMessage(from, nekko, image, { caption: nnko, quoted: mek })
 .catch(err => {
@@ -1663,7 +1663,7 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 eronz = await axios.get('https://nekos.life/api/v2/img/eron')
 buferon = await getBuffer(eronz.data.url)
-const deci =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const deci =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const fr = deci[Math.floor(Math.random() * deci.length)]
 cnf.sendMessage(from, buferon, image, { caption: fr, quoted: mek })
 .catch(err => {
@@ -1678,7 +1678,7 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 cumz = await axios.get('https://nekos.life/api/v2/img/cum_jpg')
 bufcum = await getBuffer(cumz.data.url)
-const cumj =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const cumj =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const fccr = cumj[Math.floor(Math.random() * cumj.length)]
 cnf.sendMessage(from, bufcum, image, { caption: fccr, quoted: mek })
 .catch(err => {
@@ -1693,7 +1693,7 @@ if (!isGroup) return reply(`「 ❗ 」ESTE COMANDO SOLO PUEDE SER USADO EN GRUP
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 eronk = await axios.get('https://nekos.life/api/v2/img/erokemo')
 buferok = await getBuffer(eronk.data.url)
-const decix =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const decix =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado ??','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const frx = decix[Math.floor(Math.random() * decix.length)]
 cnf.sendMessage(from, buferok, image, { caption: frx, quoted: mek })
 .catch(err => {
@@ -2032,7 +2032,7 @@ if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 breast2 = await axios.get('https://nekos.life/api/v2/img/fox_girl')
 bupboobs = await getBuffer(breast2.data.url)
-const foxc =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const foxc =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const wfoxgirl = foxc[Math.floor(Math.random() * foxc.length)]
 cnf.sendMessage(from, bupboobs, image, { caption: wfoxgirl, quoted: mek })
 .catch(err => {
@@ -2047,7 +2047,7 @@ if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 breast20 = await axios.get('https://nekos.life/api/v2/img/blowjob')
 bupboobs1 = await getBuffer(breast20.data.url)
-const bdecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const bdecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const bfrase = bdecir[Math.floor(Math.random() * bdecir.length)]
 cnf.sendMessage(from, bupboobs1, image, { caption: bfrase, quoted: mek })
 .catch(err => {
@@ -2062,7 +2062,7 @@ if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 neko20 = await axios.get('https://nekos.life/api/v2/img/lewdkemo')
 neko1 = await getBuffer(neko20.data.url)
-const nedecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const nedecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const knfrase = nedecir[Math.floor(Math.random() * nedecir.length)]
 cnf.sendMessage(from, neko1, image, { caption: knfrase, quoted: mek })
 .catch(err => {
@@ -2076,7 +2076,7 @@ if (isBanned) return  reply(mess.banned)
 if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)		  
 resx = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/animefeets?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
-const lklk =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const lklk =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const fkfk = lklk[Math.floor(Math.random() * lklk.length)]
 cnf.sendMessage(from, resx, image, { caption: fkfk, quoted: mek })
 addFilter(from)
@@ -2087,7 +2087,7 @@ if (isBanned) return  reply(mess.banned)
 if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)		  
 res = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/animethighss?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
-const lll =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const lll =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const frse = lll[Math.floor(Math.random() * lll.length)]
 cnf.sendMessage(from, res, image, { caption: frse, quoted: mek })					
 addFilter(from)
@@ -2644,7 +2644,7 @@ const ura =['https://img.nickpic.host/q1hKQ1.jpg',
 'https://img.nickpic.host/q1traD.jpg']
 let dek = ura[Math.floor(Math.random() * ura.length)]
 hero = await getBuffer(dek)
-const dkk =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const dkk =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const fsfs = dkk[Math.floor(Math.random() * dkk.length)]
 cnf.sendMessage(from, hero, image, { caption: fsfs, quoted: mek })
 addFilter(from)
@@ -3010,7 +3010,7 @@ const holo =['https://img.nickpic.host/uYPNTc.jpg',
 'https://img.nickpic.host/uHITVW.jpg']
 let live = holo[Math.floor(Math.random() * holo.length)]
 hololi = await getBuffer(live)
-const sich =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const sich =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const seseh = sich[Math.floor(Math.random() * sich.length)]
 cnf.sendMessage(from, hololi, image, { caption: seseh, quoted: mek })
 addFilter(from)
@@ -3382,7 +3382,7 @@ const sasu =['https://img.nickpic.host/q10CJP.jpg',
 'https://img.nickpic.host/q1PJuc.jpg']
 let ke = sasu[Math.floor(Math.random() * sasu.length)]
 ninte = await getBuffer(ke)
-const sic =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const sic =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const sese = sic[Math.floor(Math.random() * sic.length)]
 cnf.sendMessage(from, ninte, image, { caption: sese, quoted: mek })
 addFilter(from)
@@ -3554,7 +3554,7 @@ const uza =['https://img.nickpic.host/q1HiuD.jpg',
 'https://img.nickpic.host/q1fzQO.jpg']
 let ki = uza[Math.floor(Math.random() * uza.length)]
 uzaki = await getBuffer(ki)
-const chan =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const chan =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const kich = chan[Math.floor(Math.random() * chan.length)]
 cnf.sendMessage(from, uzaki, image, { caption: kich, quoted: mek })
 addFilter(from)
@@ -3572,7 +3572,7 @@ const hard =['https://images2.imgbox.com/22/e4/8TlGS9AD_o.jpg','https://images2.
 'https://images2.imgbox.com/9a/c5/iH3iCxj7_o.jpg','https://images2.imgbox.com/6a/54/kmHMhGXL_o.jpg','https://images2.imgbox.com/8a/fc/VeL5GbRe_o.jpg','https://images2.imgbox.com/d8/2a/f8JIpe7A_o.jpg','https://images2.imgbox.com/56/77/qENlaFVy_o.jpg','https://images2.imgbox.com/c8/bb/i3aEsYHd_o.jpg']
 let coreh = hard[Math.floor(Math.random() * hard.length)]
 hardcore = await getBuffer(coreh)
-const hkre =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const hkre =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const hark = hkre[Math.floor(Math.random() * hkre.length)]
 cnf.sendMessage(from, hardcore, image, { caption: hark, quoted: mek })
 addFilter(from)
@@ -3874,7 +3874,7 @@ const tatsu =['https://img.nickpic.host/qLC16Q.jpg',
 'https://img.nickpic.host/qLtzqP.jpg']
 let maki = tatsu[Math.floor(Math.random() * tatsu.length)]
 sait = await getBuffer(maki)
-const fubu =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const fubu =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const fubuki = fubu[Math.floor(Math.random() * fubu.length)]
 cnf.sendMessage(from, sait, image, { caption: fubuki, quoted: mek })
 addFilter(from)
@@ -4306,7 +4306,7 @@ const kono =['https://img.nickpic.host/q4MGFn.jpg',
 'https://img.nickpic.host/q484im.jpg']
 let dark = kono[Math.floor(Math.random() * kono.length)]
 konosuba = await getBuffer(dark)
-const kodecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const kodecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const kofrase = kodecir[Math.floor(Math.random() * kodecir.length)]
 cnf.sendMessage(from, konosuba, image, { caption: kofrase, quoted: mek })
 addFilter(from)
@@ -4848,7 +4848,7 @@ const dragon =['https://img.nickpic.host/q1MbuW.jpg',
 'https://img.nickpic.host/q1HmH6.jpg']
 let zuper = dragon[Math.floor(Math.random() * dragon.length)]
 dbz = await getBuffer(zuper)
-const del =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const del =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const dra = del[Math.floor(Math.random() * del.length)]
 cnf.sendMessage(from, dbz, image, { caption: dra, quoted: mek })
 addFilter(from)
@@ -5415,7 +5415,7 @@ const kann1 =['https://img.nickpic.host/qzZPkc.jpg',
 'https://img.nickpic.host/q73et8.jpg']
 let elm = kann1[Math.floor(Math.random() * kann1.length)]
 dragonmaid = await getBuffer(elm)
-const drdecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const drdecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const drfrase = drdecir[Math.floor(Math.random() * drdecir.length)]
 cnf.sendMessage(from, dragonmaid, image, { caption: drfrase, quoted: mek })
 addFilter(from)
@@ -6017,7 +6017,7 @@ const emili =['https://img.nickpic.host/q4YjZA.jpg',
 'https://img.nickpic.host/q4PCde.jpg']
 let rem = emili[Math.floor(Math.random() * emili.length)]
 rezero = await getBuffer(rem)
-const bnbn =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const bnbn =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const puck = bnbn[Math.floor(Math.random() * bnbn.length)]
 cnf.sendMessage(from, rezero, image, { caption: puck, quoted: mek })
 addFilter(from)
@@ -6154,7 +6154,7 @@ const zero =['https://img.nickpic.host/q7SLrX.jpg',
 'https://img.nickpic.host/q7qqmq.jpg']
 let hichi = zero[Math.floor(Math.random() * zero.length)]
 two = await getBuffer(hichi)
-const ttwo =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const ttwo =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const virm = ttwo[Math.floor(Math.random() * ttwo.length)]
 cnf.sendMessage(from, two, image, { caption: virm, quoted: mek })
 addFilter(from)
@@ -8446,7 +8446,7 @@ const kime =['https://img.nickpic.host/q8bqdO.jpg',
 'https://img.nickpic.host/q8Pl9W.jpg']
 let kime2 = kime[Math.floor(Math.random() * kime.length)]
 kimetsu = await getBuffer(kime2)
-const kidecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const kidecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const kifrase = kidecir[Math.floor(Math.random() * kidecir.length)]
 cnf.sendMessage(from, kimetsu, image, { caption: kifrase, quoted: mek })
 addFilter(from)
@@ -9338,7 +9338,7 @@ const cosp1 =['https://img.nickpic.host/qDgksb.jpg',
 'https://img.nickpic.host/qDDacz.jpg']
 let im = cosp1[Math.floor(Math.random() * cosp1.length)]
 cosplay = await getBuffer(im)
-const cosdecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const cosdecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const cosfrase = cosdecir[Math.floor(Math.random() * cosdecir.length)]
 cnf.sendMessage(from, cosplay, image, { caption: cosfrase, quoted: mek })
 addFilter(from)
@@ -9960,7 +9960,7 @@ const gen1 =['https://img.nickpic.host/q4pOJF.jpg',
 'https://img.nickpic.host/q4SpiJ.jpg']
 let imp = gen1[Math.floor(Math.random() * gen1.length)]
 genshin = await getBuffer(imp)
-const gedecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const gedecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const gefrase = gedecir[Math.floor(Math.random() * gedecir.length)]
 cnf.sendMessage(from, genshin, image, { caption: gefrase, quoted: mek })
 addFilter(from)
@@ -9973,7 +9973,7 @@ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 const hioi =['https://i.ibb.co/9rCvP8r/17.jpg','https://i.ibb.co/fdfHsvC/16.jpg','https://i.ibb.co/yqVzKwz/15.jpg','https://i.ibb.co/nsYzNVY/37.jpg','https://i.ibb.co/1qBSX68/14.jpg','https://i.ibb.co/x23ZS3m/36.jpg','https://i.ibb.co/9YW7H64/38.jpg','https://i.ibb.co/R6X2jFN/2.jpg','https://i.ibb.co/vkXYxQB/24.jpg','https://i.ibb.co/H4Vyy7m/1.jpg','https://i.ibb.co/KWh45C6/23.jpg','https://i.ibb.co/LS3MHDR/22.jpg','https://i.ibb.co/KVVwvkR/21.jpg','https://i.ibb.co/3Bsc4WB/20.jpg','https://i.ibb.co/87T9WSz/19.jpg','https://i.ibb.co/smpVwmM/18.jpg','https://i.ibb.co/s2f15XK/40.jpg','https://i.ibb.co/tBVm0g0/39.jpg','https://i.ibb.co/t8BTdYz/7.jpg','https://i.ibb.co/3RZfKrc/6.jpg','https://i.ibb.co/nR6RgQm/5.jpg','https://i.ibb.co/Tw184KP/27.jpg','https://i.ibb.co/Y04L6YH/4.jpg','https://i.ibb.co/6DjvwQj/26.jpg','https://i.ibb.co/t4jCPqS/3.jpg','https://i.ibb.co/WyD7LrT/25.jpg','https://i.ibb.co/B3S6Vwq/13.jpg','https://i.ibb.co/r0rkhhZ/35.jpg','https://i.ibb.co/bmCkXqm/12.jpg','https://i.ibb.co/ZJjJMPj/34.jpg','https://i.ibb.co/LQG8jrP/11.jpg','https://i.ibb.co/f9yGMFj/33.jpg','https://i.ibb.co/25Mftyb/10.jpg','https://i.ibb.co/C2vG2HJ/32.jpg','https://i.ibb.co/BVRFVwy/9.jpg','https://i.ibb.co/1ZXw3gY/31.jpg','https://i.ibb.co/7S0Tnht/8.jpg','https://i.ibb.co/GC1zzxh/30.jpg','https://i.ibb.co/80JkbbD/29.jpg','https://i.ibb.co/G5qKBmR/28.jpg']
 let na = hioi[Math.floor(Math.random() * hioi.length)]
 ta = await getBuffer(na)
-const hidecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const hidecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const hifrase = hidecir[Math.floor(Math.random() * hidecir.length)]
 cnf.sendMessage(from, ta, image, { caption: hifrase, quoted: mek })
 addFilter(from)
@@ -10235,7 +10235,7 @@ const naru =['https://img.nickpic.host/q4Si96.jpg',
 'https://img.nickpic.host/q4AMG5.jpg']
 let ruto = naru[Math.floor(Math.random() * naru.length)]
 naruto = await getBuffer(ruto)
-const nadecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const nadecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const nafrase = nadecir[Math.floor(Math.random() * nadecir.length)]
 cnf.sendMessage(from, naruto, image, { caption: nafrase, quoted: mek })
 addFilter(from)
@@ -10248,7 +10248,7 @@ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 const kann =['https://i.ibb.co/RB2jSkr/63.jpg','https://i.ibb.co/CQSRKYc/31.jpg','https://i.ibb.co/X3sB7qK/27.jpg','https://i.ibb.co/LvdXMxH/26.jpg','https://i.ibb.co/6skvJyS/29.jpg','https://i.ibb.co/CB9RY7B/28.jpg','https://i.ibb.co/VLC0PbX/23.jpg','https://i.ibb.co/HCfjWRq/22.jpg','https://i.ibb.co/mBJN78j/25.jpg','https://i.ibb.co/6PrFv4v/24.jpg','https://i.ibb.co/bs6R87r/30.jpg','https://i.ibb.co/XLkvDdh/64.jpg','https://i.ibb.co/HqwS259/42.jpg','https://i.ibb.co/XyWDLfJ/41.jpg','https://i.ibb.co/4WyX9wn/37.jpg','https://i.ibb.co/6s6r1Yp/67.jpg','https://i.ibb.co/pfBHGZR/36.jpg','https://i.ibb.co/XjcvyBQ/39.jpg','https://i.ibb.co/R2BFDjR/38.jpg','https://i.ibb.co/NVCKyhm/33.jpg','https://i.ibb.co/23Vn5Vz/62.jpg','https://i.ibb.co/CvW0Nv9/32.jpg','https://i.ibb.co/PQ21cvK/66.jpg','https://i.ibb.co/nfDLmw4/35.jpg','https://i.ibb.co/tQFQgGw/65.jpg','https://i.ibb.co/1Q9mW1N/34.jpg','https://i.ibb.co/FhgGV0c/1.jpg','https://i.ibb.co/VY22fZ8/40.jpg','https://i.ibb.co/0VnmKb6/51.jpg','https://i.ibb.co/L80NCmb/53.jpg','https://i.ibb.co/6NDxzg4/52.jpg','https://i.ibb.co/bg8gmjL/5.jpg','https://i.ibb.co/QrzTQnW/48.jpg','https://i.ibb.co/RPmtr7L/4.jpg','https://i.ibb.co/sQRbbk3/47.jpg','https://i.ibb.co/tqx3nDT/50.jpg','https://i.ibb.co/zfVK5DR/7.jpg','https://i.ibb.co/WWdKJZ9/6.jpg','https://i.ibb.co/vz9sN0k/49.jpg','https://i.ibb.co/y4dPxZ4/44.jpg','https://i.ibb.co/TYDJZZY/43.jpg','https://i.ibb.co/NjZ2MYP/3.jpg','https://i.ibb.co/SJ8wbjX/46.jpg','https://i.ibb.co/cymzyW7/2.jpg','https://i.ibb.co/gRqvK4g/45.jpg','https://i.ibb.co/163wWVZ/9.jpg','https://i.ibb.co/n6p2r0M/8.jpg','https://i.ibb.co/ZxkFydr/11.jpg','https://i.ibb.co/B6wFjYs/10.jpg','https://i.ibb.co/GxBK9MN/61.jpg','https://i.ibb.co/RTRJ4T4/16.jpg','https://i.ibb.co/Qj9NWyC/59.jpg','https://i.ibb.co/KWf968b/58.jpg','https://i.ibb.co/s2ScnfN/15.jpg','https://i.ibb.co/b68MsLz/18.jpg','https://i.ibb.co/kH89t5b/17.jpg','https://i.ibb.co/3syNdWb/60.jpg','https://i.ibb.co/gRDWxnZ/55.jpg','https://i.ibb.co/BtNSZ21/12.jpg','https://i.ibb.co/dQgzSMs/54.jpg','https://i.ibb.co/Twxf36Q/14.jpg','https://i.ibb.co/gjNqLNV/57.jpg','https://i.ibb.co/fXWqCJw/56.jpg','https://i.ibb.co/2P3YyK7/13.jpg','https://i.ibb.co/jT3vdd6/20.jpg','https://i.ibb.co/c6tt70b/19.jpg','https://i.ibb.co/k5pP9kg/21.jpg']
 let nna = kann[Math.floor(Math.random() * kann.length)]
 kana = await getBuffer(nna)
-const kandecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const kandecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const kanfrase = kandecir[Math.floor(Math.random() * kandecir.length)]
 cnf.sendMessage(from, kana, image, { caption: kanfrase, quoted: mek })
 addFilter(from)
@@ -11003,7 +11003,7 @@ const pokemss = ['https://img.nickpic.host/qDInq5.jpg',
 'https://img.nickpic.host/u646KN.jpg']
 let pokes = pokemss[Math.floor(Math.random() * pokemss.length)]
 pokemon = await getBuffer(pokes)
-const decir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const decir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const frase = decir[Math.floor(Math.random() * decir.length)]
 cnf.sendMessage(from, pokemon, image, { caption: frase, quoted: mek })
 addFilter(from)
@@ -11490,7 +11490,7 @@ const loves = ['https://img.nickpic.host/q4APBj.jpg',
 'https://img.nickpic.host/q4n8lJ.jpg']
 let tolo = loves[Math.floor(Math.random() * loves.length)]
 loveru = await getBuffer(tolo)
-const decirl =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const decirl =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const frasel = decirl[Math.floor(Math.random() * decirl.length)]
 cnf.sendMessage(from, loveru, image, { caption: frasel, quoted: mek })
 addFilter(from)
@@ -13692,7 +13692,7 @@ const hent = ['https://img.nickpic.host/qw67M5.jpg',
 'https://img.nickpic.host/qz3qEx.jpg']
 let henta = hent[Math.floor(Math.random() * hent.length)]
 hentai = await getBuffer(henta)
-const dicho =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const dicho =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const frc = dicho[Math.floor(Math.random() * dicho.length)]
 cnf.sendMessage(from, hentai, image, { caption: frc, quoted: mek })
 addFilter(from)
@@ -13718,7 +13718,7 @@ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 const vu =['https://i.ibb.co/8jMFJLS/22.jpg','https://i.ibb.co/pbJknt8/21.jpg','https://i.ibb.co/3frJKPK/20.jpg','https://i.ibb.co/WgkfC3Q/63.jpg','https://i.ibb.co/zF0fqgC/29.jpg','https://i.ibb.co/KXYsk9C/62.jpg','https://i.ibb.co/jfvgcyH/28.jpg','https://i.ibb.co/9wL1fcL/61.jpg','https://i.ibb.co/7yyB3vZ/27.jpg','https://i.ibb.co/XSJTTj5/60.jpg','https://i.ibb.co/Y0zdDjr/26.jpg','https://i.ibb.co/m9RKKr8/25.jpg','https://i.ibb.co/Gnpwyw5/24.jpg','https://i.ibb.co/vJtTs6d/23.jpg','https://i.ibb.co/TKxmb60/9.jpg','https://i.ibb.co/4Y4xVXB/55.jpg','https://i.ibb.co/Y8Z3S4W/11.jpg','https://i.ibb.co/JFkNn6M/54.jpg','https://i.ibb.co/1bxFC4R/10.jpg','https://i.ibb.co/KNWqBFz/53.jpg','https://i.ibb.co/Jpbynx5/52.jpg','https://i.ibb.co/kcWPjhf/51.jpg','https://i.ibb.co/qrVHF8H/50.jpg','https://i.ibb.co/m9ywdqR/19.jpg','https://i.ibb.co/27JC0mY/18.jpg','https://i.ibb.co/9wzz02R/17.jpg','https://i.ibb.co/sj5bDQ9/16.jpg','https://i.ibb.co/4PpYwMp/59.jpg','https://i.ibb.co/yR686k4/15.jpg','https://i.ibb.co/t4HtmB9/58.jpg','https://i.ibb.co/yBCTWg4/14.jpg','https://i.ibb.co/qyD03cF/57.jpg','https://i.ibb.co/NxMy58Z/13.jpg','https://i.ibb.co/QrHwdPZ/56.jpg','https://i.ibb.co/PG8BK52/12.jpg','https://i.ibb.co/BP0tCsG/44.jpg','https://i.ibb.co/2vsGNB5/43.jpg','https://i.ibb.co/6wnNL3f/42.jpg','https://i.ibb.co/cQ41fW1/41.jpg','https://i.ibb.co/FHhsw0z/40.jpg','https://i.ibb.co/NrXpDSn/8.jpg','https://i.ibb.co/h9cT0ZJ/7.jpg','https://i.ibb.co/PT56Dqq/6.jpg','https://i.ibb.co/dkW7ZG8/49.jpg','https://i.ibb.co/wMMN45z/5.jpg','https://i.ibb.co/nnyG8zL/48.jpg','https://i.ibb.co/RPmtr7L/4.jpg','https://i.ibb.co/SnPPfXQ/47.jpg','https://i.ibb.co/JyY7rhP/3.jpg','https://i.ibb.co/w769bF3/46.jpg','https://i.ibb.co/FW1r8JJ/2.jpg','https://i.ibb.co/7WChLwT/45.jpg','https://i.ibb.co/fpc7vrg/1.jpg','https://i.ibb.co/JtTCzqt/69.jpg','https://i.ibb.co/FsPkRQy/68.jpg','https://i.ibb.co/N2bhjmN/67.jpg','https://i.ibb.co/ctcknwP/66.jpg','https://i.ibb.co/SBD95bq/65.jpg','https://i.ibb.co/Xtn32N7/64.jpg','https://i.ibb.co/pQ1Twkh/33.jpg','https://i.ibb.co/cYfHjHv/32.jpg','https://i.ibb.co/C2ZCRMv/31.jpg','https://i.ibb.co/sJBKymV/30.jpg','https://i.ibb.co/jL3X3vL/39.jpg','https://i.ibb.co/YjjHfwv/38.jpg','https://i.ibb.co/KsDTpy1/37.jpg','https://i.ibb.co/XDGCWLq/36.jpg','https://i.ibb.co/bs0RdwX/35.jpg','https://i.ibb.co/m5dg5KG/34.jpg']
 let vuvu = vu[Math.floor(Math.random() * vu.length)]
 kkj = await getBuffer(vuvu)
-const lodecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const lodecir =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const lofrase = lodecir[Math.floor(Math.random() * lodecir.length)]
 cnf.sendMessage(from, kkj, image, { caption: lofrase, quoted: mek })
 addFilter(from)
@@ -14137,7 +14137,7 @@ if (isBanned) return  reply(mess.banned)
 if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 waifu = await getBuffer(`https://api.lolhuman.xyz/api/random/waifu?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
-const waiff =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊']
+const waiff =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
 const wife = waiff[Math.floor(Math.random() * waiff.length)]
 cnf.sendMessage(from, waifu, image, { caption: wife, quoted: mek })
 addFilter(from)
