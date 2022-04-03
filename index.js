@@ -1190,17 +1190,17 @@ case prefix+ 'rankfurry':
 if (isBanned) return  reply(mess.banned)
 if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
 furrk = await getBuffer('https://files.catbox.moe/qwc6j2.png')
-const Z111 = groupMembers
-const U111 = groupMembers
-const T111 = groupMembers
-const F111 = Z111[Math.floor(Math.random() * Z111.length)]  
-const G222 = U111[Math.floor(Math.random() * U111.length)]
-const H333 = T111[Math.floor(Math.random() * T111.length)]          
+const Z11F = groupMembers
+const U11F = groupMembers
+const T11F = groupMembers
+const F11F = Z11F[Math.floor(Math.random() * Z11F.length)]  
+const G22F = U11F[Math.floor(Math.random() * U11F.length)]
+const H33F = T11F[Math.floor(Math.random() * T11F.length)]          
 jds = []
 D11 = `●❯────────────────❮●\nTop de los mas furros del grupo\n@${F111.jid.split('@')[0]} \n🦊\n@${G222.jid.split('@')[0]}\n🐼\n@${H333.jid.split('@')[0]}\n●❯────────────────❮●`                  
-jds.push(F111.jid)
-jds.push(G222.jid)
-jds.push(H333.jid)
+jds.push(F11F.jid)
+jds.push(G22F.jid)
+jds.push(H33F.jid)
 cnf.sendMessage(from, furrk, MessageType.image, { quoted: mek, caption: `${D11}`, contextInfo: { mentionedJid: jds}})
 addFilter(from)
 break
