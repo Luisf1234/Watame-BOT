@@ -914,10 +914,10 @@ lzain = ` ‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ ‏‏‎‎ �
 *╟ ❒ ${prefix}hetero*
 *╟ ❒ ${prefix}verdad*
 *╟ ❒ ${prefix}charlie*
-*╟ ❒ ${prefix}rankgay*
 *╟ ❒ ${prefix}rankfeo*
-*╟ ❒ ${prefix}ranksexy*
+*╟ ❒ ${prefix}rankgay*
 *╟ ❒ ${prefix}tictactoe*
+*╟ ❒ ${prefix}ranksexy*
 *╟ ❒ ${prefix}rankfurry*
 *╟ ❒ ${prefix}ranklindo*
 *╟* _Puede tener errores si hay_
