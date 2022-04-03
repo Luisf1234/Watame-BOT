@@ -1159,7 +1159,7 @@ const SSG = YDDDY[Math.floor(Math.random() * YDDDY.length)]
 const SSOOD = JJSJ[Math.floor(Math.random() * JJSJ.length)]
 const HDDDH = TAAET[Math.floor(Math.random() * TAAET.length)]
 jds = []
-AJ = `●❯────────────────❮●\nTop de los mas feos del grupo\n@${SSG.jid.split('@')[0]} \n🥸\n@${SSOOD.jid.split('@')[0]}\n🤓\n@${HDDDH.jid.split('@')[0]}\n●❯────────────────❮●`                  
+AJ = `●❯────────────────❮●\nTop de los más feos del grupo\n@${SSG.jid.split('@')[0]} \n🥸\n@${SSOOD.jid.split('@')[0]}\n🤓\n@${HDDDH.jid.split('@')[0]}\n●❯────────────────❮●`                  
 jds.push(SSG.jid)
 jds.push(SSOOD.jid)
 jds.push(HDDDH.jid)
@@ -1178,7 +1178,7 @@ const F111 = Z111[Math.floor(Math.random() * Z111.length)]
 const G222 = U111[Math.floor(Math.random() * U111.length)]
 const H333 = T111[Math.floor(Math.random() * T111.length)]          
 jds = []
-D11 = `●❯────────────────❮●\nTop de los mas sexis del grupo\n@${F111.jid.split('@')[0]} \n💃\n@${G222.jid.split('@')[0]}\n🕺\n@${H333.jid.split('@')[0]}\n●❯────────────────❮●`                  
+D11 = `●❯────────────────❮●\nTop de los más sexis del grupo\n@${F111.jid.split('@')[0]} \n💃\n@${G222.jid.split('@')[0]}\n🕺\n@${H333.jid.split('@')[0]}\n●❯────────────────❮●`                  
 jds.push(F111.jid)
 jds.push(G222.jid)
 jds.push(H333.jid)
@@ -1197,7 +1197,7 @@ const F11F = Z11F[Math.floor(Math.random() * Z11F.length)]
 const G22F = U11F[Math.floor(Math.random() * U11F.length)]
 const H33F = T11F[Math.floor(Math.random() * T11F.length)]          
 jds = []
-D11 = `●❯────────────────❮●\nTop de los mas furros del grupo\n@${F11F.jid.split('@')[0]} \n🦊\n@${G22F.jid.split('@')[0]}\n🐼\n@${H33F.jid.split('@')[0]}\n●❯────────────────❮●`                  
+D11 = `●❯────────────────❮●\nTop de los más furros del grupo\n@${F11F.jid.split('@')[0]} \n🦊\n@${G22F.jid.split('@')[0]}\n🐼\n@${H33F.jid.split('@')[0]}\n●❯────────────────❮●`                  
 jds.push(F11F.jid)
 jds.push(G22F.jid)
 jds.push(H33F.jid)
