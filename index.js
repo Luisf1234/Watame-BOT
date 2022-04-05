@@ -14152,14 +14152,7 @@ addFilter(from)
 break
 
 case prefix+'waifu':
-if (isBanned) return  reply(mess.banned) 
-if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
-if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-waifu = await getBuffer(`https://api.lolhuman.xyz/api/random/waifu?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
-const waiff =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
-const wife = waiff[Math.floor(Math.random() * waiff.length)]
-cnf.sendMessage(from, waifu, image, { caption: wife, quoted: mek })
-addFilter(from)
+reply(`[ ❗ ] ESTE COMANDO ESTÁ INHABILITADO TEMPORALMENTE 😿 [ ❗ ]`)
 break
 
 case prefix+'blood':   
