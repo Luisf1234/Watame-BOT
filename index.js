@@ -1015,14 +1015,7 @@ addFilter(from)
 break
 
 case prefix+'nh':
-if (isBanned) return  reply(mess.banned)
-if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
-if (args.length < 1) return reply('Adjunta el código 😾')   
-nhbus = args.join(" ")
-nhent = await fetchJson(`https://api.lolhuman.xyz/api/nhentaipdf/${nhbus}?apikey=c9b3628121d4a8adfbff2e11`)
-buffer = await getBuffer(nhent.result)
-cnf.sendMessage(from, buffer, document, { mimetype: 'document/pdf', filename: `NHentai${nhbus}.pdf` })
-addFilter(from)
+reply(`[ ❗ ] INHABILITADO TEMPORALMENTE 😿 [ ❗ ]`)
 break
 
 case prefix+'gimage':
@@ -1049,34 +1042,7 @@ addFilter(from)
 break
 
 case prefix+'nhimagen':
-if (isBanned) return  reply(mess.banned)
-if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
-if (args.length < 1) return reply('Adjunta el código 😾')   
-nhjpg = args.join(" ")
-nhent = await fetchJson(`https://api.lolhuman.xyz/api/nhentai/${nhjpg}?apikey=c9b3628121d4a8adfbff2e11`)
-ndjpg = nhent.result.image
-infoh = `❒═════❬ *NHENTAI* ❭═════╾❒
-├‣ *Título* : 
-┴
-${nhent.result.title_romaji}
-┬
-├‣ *Tags* : 
-┴
-${nhent.result.info.tags}
-┬
-├‣ *Artista* : 
-┴
-${nhent.result.info.artists}
-┬
-├‣ *Páginas* : 
-┴
-${nhent.result.info.pages}
-┬
-❒═════════════════╾❒`
-cnf.sendMessage(from, infoh, text,{quoted : mek})
-for (image_ in ndjpg) {buffer = await getBuffer(ndjpg[image_])
-await cnf.sendMessage(from, buffer, image)}
-addFilter(from)
+reply(`[ ❗ ] INHABILITADO TEMPORALMENTE 😿 [ ❗ ]`)
 break
 
 case prefix+'start':
@@ -2091,25 +2057,11 @@ addFilter(from)
 break
 
 case prefix+'patas':
-if (isBanned) return  reply(mess.banned)
-if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
-if (!isBotGroupAdmins) return reply(mess.only.Badmin)		  
-resx = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/animefeets?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
-const lklk =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
-const fkfk = lklk[Math.floor(Math.random() * lklk.length)]
-cnf.sendMessage(from, resx, image, { caption: fkfk, quoted: mek })
-addFilter(from)
+reply(`[ ❗ ] INHABILITADO TEMPORALMENTE 😿 [ ❗ ]`)
 break
 
 case prefix+'thighs':
-if (isBanned) return  reply(mess.banned)
-if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
-if (!isBotGroupAdmins) return reply(mess.only.Badmin)		  
-res = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/animethighss?apikey=c9b3628121d4a8adfbff2e11`, {method: 'get'})
-const lll =['Aquí tienes 💕🦈','¿Linda foto no?','Pedido entregado 🕊','¿Qué tal está?','¿Te gusta?','Tengo muchas más 😽']
-const frse = lll[Math.floor(Math.random() * lll.length)]
-cnf.sendMessage(from, res, image, { caption: frse, quoted: mek })					
-addFilter(from)
+reply(`[ ❗ ] INHABILITADO TEMPORALMENTE 😿 [ ❗ ]`)
 break
 
 case prefix+'linkgroup':
@@ -14051,7 +14003,7 @@ case prefix+'✋':
 if (isBanned) return  reply(mess.banned)
 const papel =[`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✋\n\n  :0 𝑬𝒎𝒑𝒂𝒕𝒆`,`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✊\n\n :( 𝑮𝒂𝒏𝒂?? 𝒕𝒖`,`𝒀𝒐 𝒆𝒍𝒊𝒋𝒐 : ✌️\n\n :) 𝑮𝒂𝒏𝒆 𝒉𝒖𝒎𝒂𝒏𝒐 𝒆𝒔𝒕𝒖𝒑𝒊𝒅𝒐`]
 const jggg = papel[Math.floor(Math.random() * papel.length)]
-cnf.sendMessage(from, `𝑷𝑰𝑬𝑫𝑹𝑨 𝑷𝑨𝑷𝑬𝑳 𝑶 𝑻𝑰𝑱𝑬𝑹𝑨\n\n` + jggg, text)
+cnf.sendMessage(from, `𝑷𝑰𝑬𝑫𝑹?? 𝑷𝑨𝑷𝑬𝑳 𝑶 𝑻𝑰𝑱𝑬𝑹𝑨\n\n` + jggg, text)
 addFilter(from)
 break
 					
