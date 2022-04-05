@@ -2273,12 +2273,7 @@ addFilter(from)
 break
 					
 case prefix+'lolihentai':
-if (isBanned) return  reply(mess.banned)
-if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
-if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-lolihentai = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/chiisaihentai?apikey=c9b3628121d4a8adfbff2e11`)
-cnf.sendMessage(from, lolihentai, image, {quoted: mek, caption: 'Aquí tienes 💕🦈'})
-addFilter(from)
+reply(`[ ❗ ] INHABILITADO TEMPORALMENTE 😿 [ ❗ ]`)
 break
 		
 case prefix+'sakura':
