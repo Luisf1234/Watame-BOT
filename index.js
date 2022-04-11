@@ -13866,10 +13866,6 @@ addFilter(from)
 break
 
 case prefix+'play':
-reply('En mantenimiento 😽')
-break
-
-case prefix+'maintance':
 if (isBanned) return  reply(mess.banned)          	  
 if (args.length < 1) return reply('Coloca el enlace de la canción!')
 play = body.slice(6)
@@ -13896,10 +13892,6 @@ addFilter(from)
 break
 
 case prefix+'play2':
-reply('En mantenimiento 😽')
-break
-
-case prefix+'maintance2':
 if (args.length < 1) return reply('Coloca el enlace del video!')
 play2 = body.slice(6)
 anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=c9b3628121d4a8adfbff2e11&query=${play2}`)
