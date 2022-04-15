@@ -75,8 +75,8 @@ const sleep = async (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-ConfuMods = [`51931655706@s.whatsapp.net`] 
-prefix = '#'
+ConfuMods = [`51973728856@s.whatsapp.net`] 
+prefix = '.'
 hardi = 'hardianto'
 blocked = []
 fake = '🌸Watame-BOT🌸'
