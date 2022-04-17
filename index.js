@@ -963,7 +963,7 @@ break
 
 case prefix+'spoti':
 if (isBanned) return  reply(mess.banned)
-if (!isGroup) return reply(`[ ❗ ] ESTE COMANDO SOLO PUEDE SER USADO EN GRUPOS 😿 [ ❗ ]`)
+
 if (args.length < 1) return reply('Adjunta el enlace de la canción😾')
 stify = args.join(" ")
 spot = await fetchJson(`https://api.lolhuman.xyz/api/spotify?apikey=c9b3628121d4a8adfbff2e11&url=${stify}`)
